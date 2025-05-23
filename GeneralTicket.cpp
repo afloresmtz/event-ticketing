@@ -10,7 +10,7 @@ std::string GeneralTicket::showDetail() {
     detail <<"GENERAL TICKET: \n"<<"======================\n"
     << "Code: " << code << "\n"
     << "Date: " << date << "\n"
-    << "Zone" << zone << "\n"
+    << "Zone: " << zone << "\n"
     << "Final Price: " << price * (0.95) << "\n"
     <<"======================\n";
 
