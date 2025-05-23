@@ -7,7 +7,7 @@ VIPTicket::VIPTicket(int price, std::string code, std::string date, std::string 
 
 std::string VIPTicket::showDetail() {
     std::ostringstream detail;
-    detail <<"VIP TICKET:  \n"<<"======================\n"
+    detail <<"VIP TICKET: \n"<<"======================\n"
     << "Code: " << code << "\n"
     << "Date: " << date << "\n"
     << "Benefits" << benefits << "\n"
@@ -16,4 +16,3 @@ std::string VIPTicket::showDetail() {
 
     return detail.str();
 }
-
