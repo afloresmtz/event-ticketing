@@ -4,14 +4,14 @@
 Ticket::Ticket(int price, std::string code, std::string date)
     : price(price), code(code), date(date) {}
 
-std::string Ticket::showDetail() const {
+std::string Ticket::showDetail(){
     std::ostringstream detail;
-    detail <<"BASE TICKET: \n"<<"======================\n"
-<< "Code: " << code << "\n"
-        << "Date: " << date << "\n"
-           << "Price: " << price << "\n"
-           <<"======================\n";
-    
+    detail <<"Ticket detail: \n"<<"======================\n"
+    << "Code: " << code << "\n"
+    << "Date: " << date << "\n"
+    << "Price: " << price << "\n"
+    <<"======================\n";
+
     return detail.str();
 }
 
@@ -30,4 +30,3 @@ std::string Ticket::getCode() const {
 std::string Ticket::getDate() const {
     return date;
 }
-
