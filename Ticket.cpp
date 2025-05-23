@@ -15,3 +15,19 @@ std::string Ticket::showDetail() const {
     return detail.str();
 }
 
+int Ticket::getPrice() const {
+    return price;
+}
+
+int Ticket::getPrice(int price_discount) const {
+    return price*(1 + price_discount);
+}
+
+std::string Ticket::getCode() const {
+    return code;
+}
+
+std::string Ticket::getDate() const {
+    return date;
+}
+
