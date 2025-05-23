@@ -1,1 +1,18 @@
+#include "VIPTicket.h"
+#include <string>
+
+VIPTicket::VIPTicket(int price, std::string code, std::string date, std::string benefits):
+    Ticket(price, code, date), benefits(benefits) { }
+
+std::string VIPTicket::showDetail() {
+    std::ostringstream detail;
+    detail <<"General Ticket detail: \n"<<"======================\n"
+    << "Code: " << code << "\n"
+    << "Date: " << date << "\n"
+    << "Benefits" << benefits << "\n"
+    << "Final Price: " << price * (1.25) << "\n"
+    <<"======================\n";
+
+    return detail.str();
+}
 
