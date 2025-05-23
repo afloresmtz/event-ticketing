@@ -1,6 +1,8 @@
 #ifndef GENERALTICKET_H
 #define GENERALTICKET_H
+
 #include <string>
+#include "Ticket.h"
 
 class GeneralTicket : public Ticket {
 private:
@@ -12,4 +14,3 @@ public:
 };
 
 #endif
-
