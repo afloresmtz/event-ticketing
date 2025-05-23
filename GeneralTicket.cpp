@@ -7,7 +7,7 @@ GeneralTicket::GeneralTicket(int price, std::string code, std::string date, std:
 
 std::string GeneralTicket::showDetail() {
     std::ostringstream detail;
-    detail <<"General Ticket detail: \n"<<"======================\n"
+    detail <<"GENERAL TICKET: \n"<<"======================\n"
     << "Code: " << code << "\n"
     << "Date: " << date << "\n"
     << "Zone" << zone << "\n"
