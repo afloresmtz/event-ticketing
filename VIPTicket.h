@@ -2,6 +2,7 @@
 #define VIPTICKET_H
 
 #include <string>
+#include "Ticket.h"
 
 class VIPTicket : public Ticket {
 private:
@@ -9,8 +10,7 @@ private:
 public:
     VIPTicket(int price, std::string code, std::string date, std::string benefits);
 
-    std::string showDetails() override;
+    std::string showDetail() override;
 };
 
 #endif
-
