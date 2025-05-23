@@ -10,7 +10,7 @@ std::string VIPTicket::showDetail() {
     detail <<"VIP TICKET: \n"<<"======================\n"
     << "Code: " << code << "\n"
     << "Date: " << date << "\n"
-    << "Benefits" << benefits << "\n"
+    << "Benefits: " << benefits << "\n"
     << "Final Price: " << price * (1.25) << "\n"
     <<"======================\n";
 
