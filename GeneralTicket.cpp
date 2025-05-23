@@ -1,5 +1,6 @@
 #include "GeneralTicket.h"
 #include <string>
+#include <sstream>
 
 GeneralTicket::GeneralTicket(int price, std::string code, std::string date, std::string zone):
     Ticket(price, code, date),zone(zone) { }
