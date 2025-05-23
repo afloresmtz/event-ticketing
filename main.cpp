@@ -8,7 +8,7 @@ int main(){
     std::cout << ticket.showDetail();
     GeneralTicket generalTicket(100, "GEN123", "2025-09-15", "B");
     std::cout << generalTicket.showDetail();
-    VIPTicket vipTicket(125, "VIP456", "2025-09-15", "Backstage access");
+    VIPTicket vipTicket(100, "VIP456", "2025-09-15", "Backstage access");
     std::cout << vipTicket.showDetail();
     return 0;
 }
