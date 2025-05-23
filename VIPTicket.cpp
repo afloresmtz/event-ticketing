@@ -1,5 +1,6 @@
 #include "VIPTicket.h"
 #include <string>
+#include <sstream>
 
 VIPTicket::VIPTicket(int price, std::string code, std::string date, std::string benefits):
     Ticket(price, code, date), benefits(benefits) { }
