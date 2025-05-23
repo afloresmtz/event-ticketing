@@ -12,7 +12,7 @@ protected:
 public:
     Ticket(int price, std::string code, std::string date);
 
-    virtual std::string showDetail() const;
+    virtual std::string showDetail();
 
     int getPrice() const;
     int getPrice(int price_discount) const;
@@ -23,3 +23,4 @@ public:
 };
 
 #endif // TICKET_H
+
