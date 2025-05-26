@@ -12,7 +12,7 @@ protected:
 public:
     Ticket(int price, std::string code, std::string date);
 
-    virtual std::string showDetail();
+    virtual std::string showDetail() = 0;
 
     int getPrice() const;
     int getPrice(int price_discount) const;
