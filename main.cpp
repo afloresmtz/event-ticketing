@@ -15,8 +15,10 @@ std::vector<Ticket*> tickets;
     tickets.push_back(new GeneralTicket(100, "GEN124", "2025-09-15", "A"));
     tickets.push_back(new VIPTicket(100, "VIP456", "2025-09-15", "Backstage access"));
 
-    for (Ticket* ticket : tickets){
-        std::cout << ticket->showDetail();
-    }
+std::vector<Ticket*>::iterator i;
+    for (i = tickets.begin(); i != tickets.end(); ++i)
+        {
+        std::cout <<"Ticket:"<< (*i)->showDetail();
+        }
     return 0;
 }
