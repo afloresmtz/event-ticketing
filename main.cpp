@@ -4,8 +4,9 @@
 #include <iostream>
 
 int main(){
-    Ticket ticket(100, "TCK00", "2025-09-15");
-    std::cout << ticket.showDetail();
+    //Ticket ticket(100, "TCK00", "2025-09-15");
+    //std::cout << ticket.showDetail();
+    // this object cannot be created anymore now that Ticket is an abstract class
     GeneralTicket generalTicket(100, "GEN123", "2025-09-15", "B");
     std::cout << generalTicket.showDetail();
     VIPTicket vipTicket(100, "VIP456", "2025-09-15", "Backstage access");
